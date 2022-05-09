@@ -1,0 +1,130 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Projet_ProgSys</RootNamespace>
+	<UseWPF>true</UseWPF>
+	<ApplicationIcon>View\Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\Font\Garet-Book.ttf" />
+    <None Remove="View\Font\Garet-Heavy.ttf" />
+    <None Remove="View\LogoButton.png" />
+    <None Remove="View\LogoButtonDark.png" />
+    <None Remove="View\LogoMenuEN.png" />
+    <None Remove="View\LogoMenuFR.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="View\Icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.0" />
+	  <PackageReference Include="System.Data.SQLite" Version="1.0.115.5" />
+	  <PackageReference Include="System.Data.SQLite.Core" Version="1.0.115.5" />
+	  <PackageReference Include="TopShelf.ServiceInstaller" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="CryptoSoft\CryptoSoftT.deps.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="CryptoSoft\CryptoSoftT.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="CryptoSoft\CryptoSoftT.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="CryptoSoft\CryptoSoftT.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="CryptoSoft\CryptoSoftT.runtimeconfig.dev.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="CryptoSoft\CryptoSoftT.runtimeconfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="View\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="View\MainMenuWindows.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="View\SaveWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="View\StateLogWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\Font\Garet-Book.ttf" />
+    <Resource Include="View\Font\Garet-Heavy.ttf" />
+    <Resource Include="View\LogoButton.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\LogoButtonDark.png" />
+    <Resource Include="View\LogoMenuEN.png" />
+    <Resource Include="View\LogoMenuFR.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Languages\Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Update="View\CryptPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PromptNewBackup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PromptVerification.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PromptSoftware.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Languages\Resource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Languages\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="View\CryptPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PromptNewBackup.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PromptVerification.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PromptSoftware.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+	<ItemGroup>
+		<Content Include="CryptoSoft\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+</Project>

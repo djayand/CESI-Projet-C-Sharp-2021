@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Projet-ProgSys": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}

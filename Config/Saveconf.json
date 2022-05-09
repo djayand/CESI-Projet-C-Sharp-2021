@@ -1,0 +1,41 @@
+[
+  {
+    "ID": "1",
+    "Name": "Save1",
+    "SourcePath": "D:\\Users\\Perso\\Desktop\\A\\Word.docx",
+    "DestinationPath": "D:\\Users\\Perso\\Desktop\\B\\Word.docx",
+    "SaveType": "1"
+  },
+
+  {
+    "ID": "2",
+    "Name": "Save2",
+    "SourcePath": "D:\\Users\\Perso\\Desktop\\A\\Word.docx",
+    "DestinationPath": "D:\\Users\\Perso\\Desktop\\B\\Word.docx",
+    "SaveType": "1"
+  },
+
+  {
+    "ID": "3",
+    "Name": "Save3",
+    "SourcePath": "D:\\Users\\Perso\\Desktop\\A\\Word.docx",
+    "DestinationPath": "D:\\Users\\Perso\\Desktop\\B\\Word.docx",
+    "SaveType": "1"
+  },
+
+  {
+    "ID": "4",
+    "Name": "Save4",
+    "SourcePath": "D:\\Users\\Perso\\Desktop\\A\\Word.docx",
+    "DestinationPath": "D:\\Users\\Perso\\Desktop\\B\\Word.docx",
+    "SaveType": "1"
+  },
+
+  {
+    "ID": "5",
+    "Name": "Save5",
+    "SourcePath": "D:\\Users\\Perso\\Desktop\\A\\Word.docx",
+    "DestinationPath": "D:\\Users\\Perso\\Desktop\\B\\Word.docx",
+    "SaveType": "1"
+  }
+]

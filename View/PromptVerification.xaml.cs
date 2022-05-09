@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using Projet_ProgSys.ViewModel;
+
+namespace Projet_ProgSys_Graphical
+{
+    /// <summary>
+    /// Interaction logic for Window1.xaml
+    /// </summary>
+    public partial class PromptVerification : Window
+    {
+        public PromptVerification()
+        {
+            InitializeComponent();
+        }
+
+        public void IAmSure(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = true;
+        }
+
+    }
+}

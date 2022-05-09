@@ -1,0 +1,27 @@
+﻿<Page x:Class="Projet_ProgSys.View.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projet_ProgSys.View"
+      xmlns:language="clr-namespace:Projet_ProgSys.Languages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HomePage">
+    <Page.Resources>
+        <FontFamily x:Key="Font" >Font/#Garet Book</FontFamily>
+    </Page.Resources>
+
+    <Grid Background="#2C2F33">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".6*"/>
+            <RowDefinition Height=".4*"/>
+        </Grid.RowDefinitions>
+        <Image Source="LogoMenuEN.png" Grid.Row="0" Margin="0,-100,0,-100" Stretch="Uniform"></Image>
+
+        <TextBlock FontFamily="{StaticResource Font}" Grid.Row="1" TextAlignment="Center" FontSize="22" Foreground="White" FontWeight="Normal" ><Run Text="{x:Static language:Resource.MadeBy}"/><LineBreak/><Run/><LineBreak/><Run Text="Frédéric Spataro, Djayan Demaison, Ken Fetet, Arthur Lambert"/></TextBlock>
+        
+
+    </Grid>
+</Page>

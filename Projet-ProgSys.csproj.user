@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\spata\source\repos\Projet-ProgSys\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="View\PromptExtension.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\BackupPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\HomePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Page1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Languages\Resource.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\CryptPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PromptNewBackup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PromptVerification.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PromptSoftware.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PromptExtension.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\BackupPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Page1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

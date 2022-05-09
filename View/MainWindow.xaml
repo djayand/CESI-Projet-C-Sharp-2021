@@ -1,0 +1,74 @@
+﻿<Window x:Class="Projet_ProgSys_Graphical.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:language="clr-namespace:Projet_ProgSys.Languages"
+        mc:Ignorable="d"
+        Title="EasySave" Height="600" Width="1000">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#23272A"/>
+            <Setter Property="Foreground" Value="#F6F6F6"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#2C2F33"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <FontFamily x:Key="Font" >Font/#Garet Book</FontFamily>
+    </Window.Resources>
+
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".2*"/>
+            <ColumnDefinition Width=".8*"/>
+        </Grid.ColumnDefinitions>
+
+        <DockPanel Grid.Column="0" Background="#2C2F33" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Button x:Name="Home" Grid.Row="0" Click="SetHomePage">
+
+                    <Image x:Name="Logo" Stretch="UniformToFill" StretchDirection="Both" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image.Style>
+                            <Style TargetType="{x:Type Image}">
+                                <Setter Property="Source" Value="LogoButton.png"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Source" Value="LogoButton.png"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+                </Button>
+                <Button x:Name="Backups" Content="{x:Static language:Resource.Backups}"  Grid.Row="1" Click="Backups_Click" FontFamily="{StaticResource Font}"/>
+                <Button x:Name="Chiffrage" Content="{x:Static language:Resource.Encryption}" Grid.Row="2" Click="Encryption_Click" FontFamily="{StaticResource Font}"/>
+                <Button x:Name="Parameters" Content="{x:Static language:Resource.Settings}" Grid.Row="3" Click="SetParameters" FontFamily="{StaticResource Font}"/>
+            </Grid>
+        </DockPanel>
+
+        <DockPanel Grid.Column="1" Background="#2C2F33">
+            <Frame Grid.Column="1" NavigationUIVisibility="Hidden" Name="Frame" Source="HomePage.xaml" />
+        </DockPanel>
+
+    </Grid>
+
+
+</Window>
