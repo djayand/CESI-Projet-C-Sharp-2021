@@ -1,5 +1,7 @@
+# Projet C# A3 - 2021
+
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+The primary objective of this C# software is to provide users with the capability to automatically copy and paste files from one directory to another, thereby ensuring that these files are backed up safely. This software is multithreaded.
 
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
